@@ -15,10 +15,28 @@
     opacity : 0.9;
     z-index: -1;
 }*/
+
+ 
+ 
 body{
     overflow-x:hidden;
-    height: 100%;
 }
+
+#claims{
+       margin-top: -80px;
+       
+       font-family: "Times New Roman", Times, serif;
+      
+      }
+#textop{
+       margin-top: -10px;
+}
+hr.fancy-line { 
+    border: 2; 
+    height: 5px;
+
+}
+
 #logo{
     margin-top:-10%;
     height:20%;
@@ -163,9 +181,9 @@ display:block;
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
      
 </head>
-<body data-spy="scroll" data-target="#mynavbar">   
+<body>   
 <!-- Navigation bar-->
-<nav class = "navbar navbar-default navbar-fixed-top " id="mynavbar">
+<nav class = "navbar navbar-default navbar-fixed-top ">
         <div class ="container">
             <div class ="navbar-header">
                 <button type="button" class ="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -194,7 +212,6 @@ display:block;
 
 <!-- Slider-->
 <div class="fluid-container">
-<div id="home">
     <div class="row" id="slider1">
             <div class="flexslider">
                <ul class="slides">
@@ -253,21 +270,15 @@ display:block;
 
     </div>
 </div>
-</div>
 <!-- End slider-->
 
-
-<!--Claims-->
-<div class="container">
-    <section>
-        <div class="page-header" id="claims">
-            <h2><center>Claims</center></h2>
-         </div>
-         <div class="row">
+<!--Claims>-->
+<div class="fluid-container">
+    <div class="row" id="claims">
     
-        <div class="col-md-3 col-sm-2 col-xs-1">
+        <div class="col-md-3 col-sm-4 col-xs-5">
         </div>
-           <div class="col-md-6 col-sm-8 col-xs-11">
+           <div class="col-md-6 col-sm-4 col-xs-2">
             <h1 font size="10" align="center"><b> Step 1. </b></h1>
             <hr class="fancy-line"> </hr>
             <h2 font size="10" align="center"><b>See how much money you can get</b></h2>
@@ -282,56 +293,8 @@ display:block;
              </div>
             </div>
     </div>
-
-    </section>
-</div><!--End container-->
-
-
-<!--Your rights-->
-<div class="container">
-    <section>
-        <div class="page-header" id="rights">
-            <h2>Your Rights</h2>
-         </div>
-
-    </section>
-</div><!--End container-->
-
-
-<!--About Us-->
-<div class="container">
-    <section>
-        <div class="page-header" id="aboutus">
-            <h2>About Us</h2>
-         </div>
-
-    </section>
-</div><!--End container-->
-
-<!--FAQ-->
-<div class="container">
-    <section>
-        <div class="page-header" id="faq">
-            <h2>FAQ</h2>
-         </div>
-
-    </section>
-</div><!--End container-->
-
-<!--Contact Us-->
-<div class="container">
-    <section>
-        <div class="page-header" id="contact">
-            <h2>Contact Us</h2>
-         </div>
-
-    </section>
-</div><!--End container-->
-
-
-
-
-
+</div>
+<!--End claims>-->
 
 
 <!--
@@ -356,12 +319,13 @@ display:block;
 </div>
 -->
 
+
 <script type="text/javascript" src="js/jquery.flexslider.js"></script>
     <script type="text/javascript" charset="utf-8">
             $(window).load(function() {
             $('.flexslider').flexslider({
             // animation:"slide",
-            // pauseOnHover: true,
+            pauseOnHover: true,
             controlNav: false
             });
             });
