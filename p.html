@@ -34,37 +34,52 @@ li {
 }
 
 .wrap img {
+	margin: 0 -20px;
       position:relative;
       opacity: 0.9;
       width:100%;
       height:50%;
 
     }
-    .wrap .desc {
+    .wrap .title {
       display:block;
       position:absolute;
       width:100%;
-      top:40%;
+      top:15%;
       left:0;
       z-index:2;
       text-align:center;
       color: white;
-       font: italic bold 30px/60px Georgia, serif;
+      font-size: 40px;
+      font-family: "Times New Roman", Times, serif;
        
        
 
     }
-    .flex-caption {
-    bottom:50px;
-    color: white;
-    font-size: 16px;
-    line-height: 20px;
-    left:0;
-    padding:0 20px;
-    position:absolute;
-    right:0;
-    text-transform: uppercase;
-    z-index:1;
+    .wrap .body {
+      display:block;
+      position:absolute;
+      width:100%;
+      top:45%;
+   
+      z-index:2;
+      text-align:center;
+      color: white;
+      font-size: 30px;
+      font-family: "Times New Roman", Times, serif;
+       
+       
+
+    }
+    
+.wrap .element{
+display:block;
+      position:absolute;
+      width:100%;
+      top:80%;
+   
+      z-index:2;
+      text-align:center;
 }
 </style>
 
@@ -112,9 +127,14 @@ li {
                         <!-- <div class="box">
                         <p>this is slide1</p> -->
                         <div class="wrap">
-                       <img src="img/background.png" />
-                       <h2 class="desc">Flight delayed? Flight cancelled?</h2>
+                       <img src="img/aero.png" />
+                       <div class="title">Flight delayed?<br/> Flight cancelled?<br/>You might be entitled for a compensation.</div><br/><br/>
+                       <div class="body">Do you know that you as a traveller has the right to get compensated<br/> for the trouble caused due to travel delay,
+cancellation or an overbooked flight.<br/> In case of such troubles travel companies owe you a compensation upto Rs.x.<br/> We will help you get the 
+money you are entitled to by law . <br/>We don't get paid if you don't!<br/>That means no win no fee! Claim today! We are here for your travel rights !</div>
+                          <div class="element"><button type="button" class="btn btn-primary">Start here</button></div>
                        </div>
+
                        <!--</div>-->
                     </li>
                     <li>
@@ -123,15 +143,16 @@ li {
                             <div class="wrap">
 
                            <img src="img/background.png" />
-                           <h2 class="desc">Flight delayed? Flight cancelled?</h2>
+                           <div class="title">This is how it works</div>
                            </div>
                     </li>
                     <li>
                        <!-- <div class="box">
                             <p>this is slide3</p> </div> -->
-                                                
+                          <div class="wrap">                      
                        <img src="img/background.png" />
-                       <span class="flex-caption">Place Hold It Image</span></a>
+                        <div class="title">Meet our happy customers</div>
+                           </div>
                      
 
                     </li>
@@ -140,7 +161,7 @@ li {
                             <p>this is slide4</p> </div> -->
                             <div class="wrap">
                       <img src="img/background.png" />
-                      <h2 class="desc">Flight delayed? Flight cancelled?</h2>
+                      <div class="title">Flight delayed? Flight cancelled?</div>
                        </div>
                       
                     </li>
@@ -180,9 +201,10 @@ li {
     <script type="text/javascript" charset="utf-8">
             $(window).load(function() {
             $('.flexslider').flexslider({
-            animation:"slide",
+            // animation:"slide",
             mode:"vertical",
-            direction:"vertical"
+            direction:"vertical",
+            pauseOnHover: true
             });
             });
 </script>
